@@ -1,6 +1,3 @@
----
-marp: true
----
 
 # Rest api crud
 ### crud api free
