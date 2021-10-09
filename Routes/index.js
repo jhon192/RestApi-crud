@@ -8,6 +8,15 @@ router.get("/", (req, res) => {
   res.json(data);
 });
 
+router.get("/:id", (req, res) => {
+  const { id } = req.params;
+  return(
+    data.filter(x => x.id === id).map(x => {
+      res.json(x)
+    })
+  )
+})
+
 router.post("/",(req, res) => {
   const {
     id,
