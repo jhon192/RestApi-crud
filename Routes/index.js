@@ -19,30 +19,16 @@ router.get("/:id", (req, res) => {
 
 router.post("/",(req, res) => {
   const {
-    id,
-    company,
-    type,
-    logo,
-    url,
-    position,
-    location,
-    category,
-    description,
-    date
+    name,
+    lastname,
+    phone_number
   } = req.body;
 
   const newData = { ...req.body };
   if (
-    id &&
-    company &&
-    type &&
-    logo &&
-    url &&
-    position &&
-    location &&
-    category &&
-    description && 
-    date
+    name &&
+    lastname &&
+    phone_number
   ) {
     data.push(newData);
     res.json(data);
@@ -55,28 +41,15 @@ router.put("/:id", (req, res) => {
   const { id } = req.params;
 
   const {
-    company,
-    type,
-    logo,
-    url,
-    position,
-    location,
-    category,
-    description,
-    date
+    name,
+    lastname,
+    phone_number
   } = req.body;
 
   if (
-    id &&
-    company &&
-    type &&
-    logo &&
-    url &&
-    position &&
-    location &&
-    category &&
-    description && 
-    date
+    name &&
+    lastname &&
+    phone_number
   ) {
     _.each(data, (x, i) => {
       if (x.id === id) {

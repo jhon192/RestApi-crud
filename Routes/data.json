@@ -1,14 +1,7 @@
 [
   {
-    "id": "1",
-    "company": "newTech SRL",
-    "type": "Developer dept",
-    "logo": "index.png",
-    "url": "newtech.com.do",
-    "position": "Developer JR",
-    "location": "sector rico de SD",
-    "category": "programmer",
-    "description": "es un buen empleo",
-    "date": "Sat Sep 25 2021"
+    "name": "Jhon",
+    "lastname" : "Garcia",
+    "phone_number": 1234567890
   }
 ]
